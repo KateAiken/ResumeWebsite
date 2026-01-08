@@ -7,29 +7,118 @@
 </head>
 <body>
 
-
+<!-- Shared header -->
 <div id="header"></div>
 
-<main>
-    <h2>My Resume</h2>
-
-    <h3>About Me</h3>
-    <p>I am a motivated individual interested in web development.</p>
-
-    <h3>Skills</h3>
+<!-- Side navigation for sections -->
+<nav class="side-nav">
     <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
+</nav>
 
-    <h3>Education</h3>
-    <p>Your Degree – Your School</p>
+<main>
+    <!-- About Me Section -->
+    <section id="about" class="scroll-section">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>
+                I started learning web development in 2022. I enjoy building websites
+                and creating projects that help people learn new skills.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/um.jpg" alt="My journey image">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="scroll-section">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>
+                I started learning web development in 2022. I enjoy building websites
+                and creating projects that help people learn new skills.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/um.jpg" alt="My journey image">
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="scroll-section">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>
+                I started learning web development in 2022. I enjoy building websites
+                and creating projects that help people learn new skills.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/um.jpg" alt="My journey image">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="scroll-section">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>
+                I started learning web development in 2022. I enjoy building websites
+                and creating projects that help people learn new skills.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/um.jpg" alt="My journey image">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="scroll-section">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>
+                I started learning web development in 2022. I enjoy building websites
+                and creating projects that help people learn new skills.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/um.jpg" alt="My journey image">
+        </div>
+    </section>
 </main>
 
+<!-- Shared footer -->
 <div id="footer"></div>
 
 <script src="script.js"></script>
+<script>
+    // Optional: Highlight active section in side nav
+    const sections = document.querySelectorAll('.scroll-section');
+    const navLinks = document.querySelectorAll('.side-nav a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120; // adjust for header
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
 </body>
 </html>
 
