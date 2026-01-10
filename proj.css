@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding:0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 header {
@@ -32,8 +32,11 @@ main {
     padding: 140px 20px 50px 20px; /* top padding for header */
     background-color: white;
 
-    width: 100%;
     box-sizing: border-box;  /* includes padding in width */
+    max-width: calc(100% - 140px); /* total width minus side nav width + spacing */
+    margin-right: 140px;           /* leaves space for side nav */
+    
+
 }
 
 footer {
@@ -49,10 +52,10 @@ footer {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: 20px;
+    right: 0px;
     width: 130px;
     background-color: rgba(244, 244, 244, 0.95);
-    padding: 15px 10px;
+    padding: 15px 10px 10px 0px; /* top right bottom left */
     border-left: 1px solid #ccc;
     border-radius: 8px 0 0 8px;
     z-index: 1000;
@@ -68,10 +71,14 @@ footer {
 }
 
 .side-nav ul li a {
+    display: block;
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
+    padding: 5px 0px 5xp 0xp;     /* adds consistent space inside */
+    box-sizing: border-box; /* ensures padding doesn't overflow */
+
 }
 
 .side-nav ul li a.active,
@@ -131,3 +138,12 @@ html {
     }
 }
 
+.video-background {
+    width: 50%;       /* full width of container */
+    height: auto;      /* maintain aspect ratio */
+    max-height: 500px; /* optional max height */
+    border-radius: 10px; /* optional rounded corners */
+    object-fit: cover; /* cover container without stretching */
+    display: block;
+    margin: 20px auto; /* center horizontally */
+}

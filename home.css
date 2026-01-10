@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding:0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 header {
@@ -46,10 +46,10 @@ footer {
     display: flex;
     align-items: center;
     margin: 40px 0;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap; /* makes it responsive */
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
 }
 
@@ -77,4 +77,80 @@ footer {
 }
 .content-section:nth-child(odd) {
     flex-direction: row-reverse;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.download-btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Footer ----------------------------------*/
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.contact-item img {
+    transition: transform 0.2s ease;
+}
+
+.contact-item img:hover {
+    transform: scale(1.2);
 }

@@ -52,7 +52,7 @@ footer {
     scroll-behavior: smooth;
     margin-top: 80px;
 
-    height: calc(100vh - 80px);
+    height: calc(100vh - 110px);
     padding-top: 80px;
 
     /* THIS is what hides other slides */
