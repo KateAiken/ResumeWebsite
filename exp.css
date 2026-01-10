@@ -31,7 +31,7 @@ nav a:hover {
 main {
     padding: 140px 20px 50px 20px; /* top padding for header */
     background-color: white;
-    margin: 20px;
+
     width: 100%;
     box-sizing: border-box;  /* includes padding in width */
 }
@@ -116,11 +116,6 @@ footer {
     color: #007bff;
 }
 
-/* Main content */
-main {
-    width: 100%;
-    padding: 140px 20px 50px 20px; /* top padding for header */
-}
 
 /* Sections */
 .scroll-section {

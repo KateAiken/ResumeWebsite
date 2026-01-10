@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;  /* full width */
+    padding: 15px 20px;  /* match main padding horizontally */
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 140px 20px 50px 20px; /* top padding for header */
+    background-color: white;
+
+    width: 100%;
+    box-sizing: border-box;  /* includes padding in width */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Horizontal slider */
+.horizontal-scroll {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    margin-top: 80px;
+
+    height: calc(100vh - 80px);
+    padding-top: 80px;
+
+    /* THIS is what hides other slides */
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+/* Hide scrollbar */
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Each slide */
+.scroll-card {
+    opacity: 0.4;
+    transform: scale(0.94) translateY(20px);
+    transition:
+        transform 0.6s ease,
+        opacity 0.6s ease;
+
+    /* keep your existing styles below */
+
+    flex: 0 0 65vw;                 /* slightly narrower */
+    height: 65vh;                   /* SHORTER height */
+
+    scroll-snap-align: center;
+
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+    margin-right: 35vw;             /* keeps single-card view */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.scroll-card.active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+
+/* Content */
+.scroll-card img {
+    max-width: 45%;
+    border-radius: 10px;
+}
+
+.scroll-card .text {
+    max-width: 45%;
+}
+
+/* Background panel */
+.slider-background {
+    position: fixed;
+    top: 120px;               /* below header */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 160px);
+    background: linear-gradient(135deg, #f4f6f9, #e9ecf1);
+    z-index: -1;
+}
+
+/* Progress dots under slider */
+.progress-dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;       /* space below project block */
+    margin-bottom: 40px;
+    opacity: 0.85;
+}
+
+/* Individual dot */
+.progress-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Active dot */
+.progress-dot.active {
+    background-color: #333;
+    transform: scale(1.4);
+}
+
+.slider-wrapper {
+    background: white;
+    padding-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;  /* full width */
+    padding: 15px 20px;  /* match main padding horizontally */
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 140px 20px 50px 20px; /* top padding for header */
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;  /* includes padding in width */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Sections with text + images --------------------------------------------------------------------*/
+.content-section {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+    flex-wrap: wrap; /* makes it responsive */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content-section .text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.content-section .image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.content-section .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Section headings */
+.content-section h3 {
+    margin-top: 0;
+}
+.content-section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
