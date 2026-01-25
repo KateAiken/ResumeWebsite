@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding:0;
+    padding: 0;
     background-color: #f4f4f4;
 }
 
@@ -11,8 +11,10 @@ header {
     text-align: center;
     position: fixed;
     top: 0;
-    width: 100%;  /* full width */
-    padding: 15px 20px;  /* match main padding horizontally */
+    width: 100%;
+    /* full width */
+    padding: 15px 20px;
+    /* match main padding horizontally */
     z-index: 1000;
     box-sizing: border-box;
 }
@@ -29,11 +31,13 @@ nav a:hover {
 }
 
 main {
-    padding: 140px 20px 50px 20px; /* top padding for header */
+    padding: 140px 20px 50px 20px;
+    /* top padding for header */
     background-color: white;
 
     width: 100%;
-    box-sizing: border-box;  /* includes padding in width */
+    box-sizing: border-box;
+    /* includes padding in width */
 }
 
 footer {
@@ -47,25 +51,33 @@ footer {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    max-width: 1200px;       /* bigger container */
-    width: 90%;              /* almost full screen */
-    margin: 40px auto;       /* center horizontally */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    /* bigger container */
+    width: 90%;
+    /* almost full screen */
+    margin: 40px auto;
+    /* center horizontally */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Tab Buttons Container */
 .tabs-buttons {
     display: flex;
-    gap: 10px;               /* space between buttons */
+    gap: 10px;
+    /* space between buttons */
     margin-bottom: 20px;
-    flex-wrap: wrap;          /* wrap on smaller screens */
+    flex-wrap: wrap;
+    /* wrap on smaller screens */
 }
 
 /* Make buttons fill available space */
 .tab-btn {
-    flex: 1;                  /* each button takes equal width */
-    text-align: center;       /* center text inside button */
-    padding: 15px 0;          /* taller buttons */
+    flex: 1;
+    /* each button takes equal width */
+    text-align: center;
+    /* center text inside button */
+    padding: 15px 0;
+    /* taller buttons */
     border: none;
     border-bottom: 3px solid transparent;
     background: none;
@@ -83,11 +95,34 @@ footer {
     color: #007bff;
 }
 
+
+
 /* Tab Content Panels */
 .tab-panel {
     display: none;
 }
 
 .tab-panel.active {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* makes it responsive */
+
+}
+
+.tab-panel .text {
+    flex: 1;
+    min-width: 250px;
+
+}
+
+.tab-panel .image {
+    flex: 1;
+    min-width: 250px;
+}
+.tab-panel .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }

@@ -17,6 +17,10 @@ header {
     box-sizing: border-box;
 }
 
+p{
+    font-size: 17px;
+}
+
 
 nav a {
     color: white;
@@ -62,6 +66,7 @@ footer {
     flex: 1;
     min-width: 250px;
     text-align: center;
+
 }
 
 .content-section .image img {
@@ -79,6 +84,8 @@ footer {
     flex-direction: row-reverse;
 }
 
+
+/* DOWNLOAD BUTTON*/
 .download-btn {
     display: inline-block;
     padding: 12px 24px;
@@ -142,15 +149,47 @@ footer {
     text-decoration: underline;
 }
 
-.footer-copy {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
 .contact-item img {
     transition: transform 0.2s ease;
 }
 
 .contact-item img:hover {
+    transform: scale(1.2);
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+
+/*CONTACT SECTION PHOTOS*/
+.cont-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cont-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.cont-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.cont-item a:hover {
+    text-decoration: underline;
+}
+
+.cont-item img {
+    transition: transform 0.2s ease;
+}
+
+.cont-item img:hover {
     transform: scale(1.2);
 }
