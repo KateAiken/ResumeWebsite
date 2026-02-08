@@ -5,18 +5,6 @@ body {
     background-color: white;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;  /* full width */
-    padding: 15px 20px;  /* match main padding horizontally */
-    z-index: 1000;
-    box-sizing: border-box;
-}
-
 p{
     font-size: 17px;
 }

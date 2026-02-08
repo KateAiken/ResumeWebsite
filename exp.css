@@ -5,20 +5,6 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    /* full width */
-    padding: 15px 20px;
-    /* match main padding horizontally */
-    z-index: 1000;
-    box-sizing: border-box;
-}
-
 
 nav a {
     color: white;
@@ -31,7 +17,7 @@ nav a:hover {
 }
 
 main {
-    padding: 50px 20px 50px 20px;
+    padding: 20px 20px 50px 20px;
     /* top padding for header */
     background-color: white;
     line-height: 1.5;
