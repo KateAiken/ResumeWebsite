@@ -24,25 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!slider || cards.length === 0) return;
 
-    /* Keyboard navigation */
-    document.addEventListener("keydown", (e) => {
-        const cardWidth = cards[0].offsetWidth + window.innerWidth * 0.35;
-        let currentIndex = Math.round(slider.scrollLeft / cardWidth);
-
-        if (e.key === "ArrowRight") {
-            currentIndex = Math.min(currentIndex + 1, cards.length - 1);
-        }
-
-        if (e.key === "ArrowLeft") {
-            currentIndex = Math.max(currentIndex - 1, 0);
-        }
-
-        slider.scrollTo({
-            left: currentIndex * cardWidth,
-            behavior: "smooth"
-        });
-    });
-
     /* Active card */
     function updateActiveCard() {
         const sliderCenter = slider.scrollLeft + slider.offsetWidth / 2;
@@ -144,4 +125,29 @@ tabButtons.forEach(button => {
         button.classList.add("active");
         document.getElementById(target).classList.add("active");
     });
+});
+
+
+const scrollContainer = document.querySelector('.horizontal-scroll').focus();
+const leftBtn = document.querySelector('.slider-button.left');
+const rightBtn = document.querySelector('.slider-button.right');
+
+const scrollAmount = scrollContainer.clientWidth * 0.8;
+
+// Arrow buttons
+leftBtn.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+rightBtn.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+// Keyboard arrows (listen on document)
+document.addEventListener('keydown', (event) => {
+    if(event.key === "ArrowLeft") {
+        scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else if(event.key === "ArrowRight") {
+        scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
 });

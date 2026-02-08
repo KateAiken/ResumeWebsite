@@ -1,0 +1,71 @@
+nav a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Container ---------------------------------- */
+.site-footer {
+    background-color: #fff;
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* Sticky footer setup */
+    margin-top: auto;  /* works with flex layout on page container */
+}
+
+/* Footer content: links, contact info, etc. */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Contact Items -------------------------- */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;         /* keeps icons proportionate */
+    transition: transform 0.2s ease;
+}
+
+.contact-item img:hover {
+    transform: scale(1.2);
+}
+
+.contact-item a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+    color: #666666;
+}
+
+/* Footer copyright text */
+.footer-copy {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* R*

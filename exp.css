@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -31,13 +31,10 @@ nav a:hover {
 }
 
 main {
-    padding: 140px 20px 50px 20px;
+    padding: 50px 20px 50px 20px;
     /* top padding for header */
     background-color: white;
-
-    width: 100%;
-    box-sizing: border-box;
-    /* includes padding in width */
+    line-height: 1.5;
 }
 
 footer {
@@ -51,12 +48,12 @@ footer {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    max-width: 1200px;
-    /* bigger container */
-    width: 90%;
-    /* almost full screen */
+
+
+    width: 95%;
+
     margin: 40px auto;
-    /* center horizontally */
+
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -64,10 +61,10 @@ footer {
 .tabs-buttons {
     display: flex;
     gap: 10px;
-    /* space between buttons */
+
     margin-bottom: 20px;
     flex-wrap: wrap;
-    /* wrap on smaller screens */
+
 }
 
 /* Make buttons fill available space */
@@ -84,6 +81,7 @@ footer {
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease;
+    font-size: 16px;
 }
 
 .tab-btn:hover {

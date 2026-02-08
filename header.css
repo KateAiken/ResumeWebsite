@@ -1,0 +1,77 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header container */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 32px;
+}
+
+/* Name / title */
+.site-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Navigation layout */
+.site-header nav {
+  display: flex;
+  gap: 12px;
+}
+
+/* Nav links styled as buttons */
+.site-header nav a {
+  text-decoration: none;        /* removes underline */
+  color: #000000;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  padding: 8px 14px;
+  border-radius: 8px;
+
+  transition: 
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Hover button effect */
+.site-header nav a:hover {
+  background-color: #e0e7ff;   /* soft indigo */
+  color: #1e3a8a;
+}
+
+/* Active page button */
+.site-header nav a.active {
+  background-color: #224389;
+  color: #ffffff;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .site-header nav {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
