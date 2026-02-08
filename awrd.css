@@ -1,11 +1,5 @@
 
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
 /* Horizontal slider */
 .horizontal-scroll {
     display: flex;
@@ -119,7 +113,7 @@ footer {
     background: white;
     padding-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
     position: relative;
 }
 

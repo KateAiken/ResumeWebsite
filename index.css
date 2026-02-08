@@ -197,3 +197,22 @@ footer {
 .cont-item img:hover {
     transform: scale(1.2);
 }
+
+
+.titleblock{
+    padding: 30px 30px 0px 40px;
+    background-color: white;
+}
+
+.titleblock h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.titleblock p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
