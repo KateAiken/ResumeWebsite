@@ -18,12 +18,12 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 25px 32px;
+  padding: 45px 32px;
 }
 
 /* Name / title */
 .site-header h1 {
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   font-weight: 600;
   color: #111827;
 }
@@ -39,7 +39,7 @@
   text-decoration: none;        /* removes underline */
   color: #000000;
 
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 
   padding: 8px 14px;

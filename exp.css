@@ -1,20 +1,4 @@
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
 
 main {
     padding: 20px 20px 50px 20px;
