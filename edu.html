@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kate Aiken | Education & Co-curriculars</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="proj.css">
+    <link rel="stylesheet" href="edu.css">
+</head>
+<body>
+
+
+<div id="header"></div>
+
+<!-- Side navigation for sections -->
+<nav class="side-nav">
+    <ul>
+        <li><a href="#edu">Education</a></li>
+        <li><a href="#sailing">Sailing</a></li>
+        <li><a href="#hockey">Hockey</a></li>
+        <li><a href="#field">Field Hockey</a></li>
+        <li><a href="#ring">Ringette</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section class ="titleblock">
+        <h1>Education</h1>
+    </section>
+
+
+    <section id="edu" class="scroll-section">
+        <div class="text">
+            <h2>Education</h2><br>
+            <h3>Queens University - Smith Engineering</h3><h4>2024 - Present</h4>
+            <p>
+                Bachelor in Applied Science, Mechatronics and Robotics Engineering<br>
+                Deans Scolar (2024-2025)
+            </p>
+            <br>
+            <h3>Trafalgar Castle School</h3><h4>2017 - 2024</h4>
+            <p>
+                Grade 6 - Grade 12 <br>
+                Honour Roll (2020-2024)
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/jacket.png" alt="Education Photo">
+        </div>
+    </section>
+
+    <section class ="titleblock">
+        <h1>Co-Curriculars</h1>
+    </section>
+
+    <section id="sail" class="scroll-section">
+        <div class="text">
+            <h2>Sailing</h2><br>
+            <p>I have been sailing for over a decade. I started at a young age and grew more passionate about sailing every summer. I have completed all my dingy sailing levels and competed in many regattas across Ontario. I earned various sailing awards at the club I grew up at including most improved sailor and multiple racing awards. I am continuing to sail and compete while trying to learn and grow more as both a sailor and a coach. This includes racing in regattas such as 2025 fall CORK and racing keelboats. I am a certified sailing instructor for CANSail 1&2 and 3&4,  and I worked as an instructor and coach for three years.</p>
+        </div>
+        <div class="image">
+            <img src="images/sailing.png" alt="Sailing Photo">
+        </div>
+    </section>
+
+
+    <section id="hockey" class="scroll-section">
+        <div class="text">
+            <h2>Hockey</h2><br>
+            <p>Starting university I was looking for a way to stay active and meet more people so I joined an intramural hockey team. This was my first time playing hockey, even though I have been a fan for years and I am a strong skater. Playing hockey for the first time was very humbling but also an amazing learning experience. It was a reminder that I can do anything I put some time and effort into, even if I am not good at it at first.</p><br>
+        </div>
+        <div class="image">
+            <img src="images/hockey.jpg" alt="Hockey Photo">
+        </div>
+    </section>
+
+     <section id="field" class="scroll-section">
+        <div class="text">
+            <h2>Field Hockey</h2><br>
+            <p>I played field hockey both with and outside my high school for several years. As a small school we were initially classified as Division Three but we were competitive and constantly improving. In my grade 11 year, when we had already advanced to Division Two, we went undefeated, won the championship and advanced up to Division One, the highest division. In my graduating year, I was given the honour of being a co-captain, where we enjoyed a near undefeated season but bowed out in the semi-finals. This was a huge achievement for a school the fraction of the size of most of our competitors and cemented our position in Division One for the following year.</p>
+        </div>
+        <div class="image">
+            <img src="images/fieldhockey.png" alt="Field Hockey Photo">
+        </div>
+    </section>
+
+ 
+    <section id="ring" class="scroll-section">
+        <div class="text">
+            <h2>Ringette</h2><br>
+            <p>I have played ringette effectively since I learned to skate, including playing at the A level. Ringette is a sport similar to hockey, being played on ice with the goal being to put an object in the net. However, it differs in some significantly diverging rules and it is played with a ring instead of a puck as well as a stick with no blade. I played casually in university but have plans to try out for the competitive team in my second year. </p>
+        </div>
+        <div class="image">
+            <img src="images/ringette.png" alt="Ringette Photo">
+        </div>
+    </section>
+
+</main>
+
+<!-- Shared footer -->
+<div id="footer"></div>
+
+<script src="script.js"></script>
+<script>
+    // Optional: Highlight active section in side nav
+    const sections = document.querySelectorAll('.scroll-section');
+    const navLinks = document.querySelectorAll('.side-nav a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120; // adjust for header
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
