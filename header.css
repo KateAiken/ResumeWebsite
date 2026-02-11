@@ -11,7 +11,7 @@
   top: 0;
   z-index: 1000;
 
-  background-color: #ffffff;
+  background-color: #64d8f3;
   border-bottom: 1px solid #e5e7eb;
 
   display: flex;
@@ -52,8 +52,7 @@
 
 /* Hover button effect */
 .site-header nav a:hover {
-  background-color: #e0e7ff;   /* soft indigo */
-  color: #1e3a8a;
+  background-color: #97e3f4;   /* soft indigo */
 }
 
 /* Active page button */

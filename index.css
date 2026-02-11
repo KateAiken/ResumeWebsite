@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Mono:wght@700&display=swap');
+
+
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     margin: 0;
     padding:0;
     background-color: white;
 }
 
 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     font-size: 17px;
+}
+
+h1, h2, h3{
+    font-family: 'Roboto Mono', sans-serif;
+}
+h4{
+    font-family: 'Poppins';
+    font-weight: 500;
 }
 
 
@@ -28,12 +42,6 @@ main {
     box-sizing: border-box;  /* includes padding in width */
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
 /* Sections with text + images --------------------------------------------------------------------*/
 .content-section {
     display: flex;
@@ -78,8 +86,8 @@ footer {
 .download-btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #333;
-    color: white;
+    background-color: #64d8f3;
+    color: black;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
@@ -88,7 +96,7 @@ footer {
 }
 
 .download-btn:hover {
-    background-color: #555;
+    background-color: #97e3f4;
     transform: translateY(-2px);
 }
 
@@ -99,25 +107,6 @@ footer {
     margin-top: 20px;
 }
 
-
-/* Footer ----------------------------------*/
-.site-footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    
-}
 
 /* Contact Items --------------------------*/
 .contact-item {

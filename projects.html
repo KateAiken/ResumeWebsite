@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Kate Aiken | Projects</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="proj.css">
 </head>
+
 <body>
 
 
-<div id="header"></div>
+    <div id="header"></div>
 
-<!-- Side navigation for sections -->
-<nav class="side-nav">
-    <ul>
-      <!-- <li><a href="#web">Website</a></li> -->
-        <li><a href="#morse">Morse Code</a></li>
-        <li><a href="#103">Mini Bot</a></li>
-        <li><a href="#aqua">Nautical Disaster</a></li>
-        <li><a href="#filter">Filter</a></li>
-        <li><a href="#air">Air Bed</a></li>
-        <li><a href="#waldo16">Waldo 16</a></li>
-        <li><a href="#hangman">Hangman</a></li>
-        <li><a href="#2048">2048</a></li>
-        <li><a href="#vex">VEX</a></li>
-        <li><a href="#waldo15">Waldo 15</a></li>
-        <li><a href="#sink">Super Sink</a></li>
-    </ul>
-</nav>
+    <!-- Side navigation for sections -->
+    <nav class="side-nav">
+        <ul>
+            <!-- <li><a href="#web">Website</a></li> -->
+            <li><a href="#morse">Morse Code</a></li>
+            <li><a href="#103">Mini Bot</a></li>
+            <li><a href="#aqua">Nautical Disaster</a></li>
+            <li><a href="#filter">Filter</a></li>
+            <li><a href="#air">Air Bed</a></li>
+            <li><a href="#waldo16">Waldo 16</a></li>
+            <li><a href="#hangman">Hangman</a></li>
+            <li><a href="#2048">2048</a></li>
+            <li><a href="#vex">VEX</a></li>
+            <li><a href="#waldo15">Waldo 15</a></li>
+            <li><a href="#sink">Super Sink</a></li>
+        </ul>
+    </nav>
 
-<main>
+    <main>
 
-    <section class ="titleblock">
-        <h1>Projects</h1>
-    </section>
-  
-   <!-- <section id="web" class="scroll-section">
+        <section class="titleblock">
+            <h1>Projects</h1>
+        </section>
+
+        <!-- <section id="web" class="scroll-section">
         <div class="text">
             <h2>Website</h2>
             <p>
@@ -50,187 +52,285 @@
     -->
 
 
-    <section id="morse" class="scroll-section">
-        <div class="text">
-            <h2>Morse Code Sender & Receiver</h2><br>
-            <p>
-                As my final project for MREN174, Data Structures, I built a morse coder translator that can send and receive morse code with other units. The hardware consists of an arduino with an LCD screen connected to a transmotter/receiver, LED and buzzer. The code used several different data structures including a binary search tree to assign combinations of dots and dashes to a letter, a queue to manage incoming and outcoming messages and a stack to manage the sorting of words or sentences into letters. The system can take an input of either letters or dots and dashes and outputs both to the other units once sent. 
-            </p><br><br>
-            <div class = "cont-item">
-             <img src = "icons/githublogo.png" alt = "Github logo" loading="lazy">
-             <a href="https://github.com/KateAiken/178_Final_Project" target="_blank" rel="noopener">Morse Code Sender/Reciver Code</a>
+        <section id="morse" class="scroll-section">
+            <div class="text">
+                <h2>Morse Code Sender & Receiver</h2><br>
+                <p>
+                    As my final project for MREN174, Data Structures, I built a morse coder translator that can send and
+                    receive morse code with other units. The hardware consists of an arduino with an LCD screen
+                    connected to a transmotter/receiver, LED and buzzer. The code used several different data structures
+                    including a binary search tree to assign combinations of dots and dashes to a letter, a queue to
+                    manage incoming and outcoming messages and a stack to manage the sorting of words or sentences into
+                    letters. The system can take an input of either letters or dots and dashes and outputs both to the
+                    other units once sent.
+                </p><br><br>
+                <div class="cont-item">
+                    <img src="icons/githublogo.png" alt="Github logo" loading="lazy">
+                    <a href="https://github.com/KateAiken/178_Final_Project" target="_blank" rel="noopener">Morse Code
+                        Sender/Reciver Code</a>
+                </div>
             </div>
-        </div>
-        <video autoplay loop muted playsinline class="video-background">
-            <source src="images/morse.mp4" type="video/mp4" alt="Morse Code Video" loading = "lazy">
-            Your browser does not support the video tag.
-        </video>
-    </section>
+            <video autoplay loop muted playsinline class="video-background">
+                <source src="images/morse.mp4" type="video/mp4" alt="Morse Code Video" loading="lazy">
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
-    <section id="103" class="scroll-section">
-        <div class="text">
-            <h2>Louie - Mini Bot</h2><br>
-            <p>
-                I got the opportunity to work on the mini bot as part of my first year project course MREN103, Mechatronics Design I. We were tasked to design a line following algorithm so the bot could travel on a line around a board, pick up as many wire connectors as possible, return to the line, travel around the board and dump them in a bucket on the other side. This project involved a lot of tuning and the usage of several sensors including sharp sensors and reflective sensors. The goal of the project left room for creative solutions when faced with challenges. One of the biggest challenges we faced was turning a full circle once we were near the wall so we moved the sharp sensor to the bucket side of the robot and designed a backwards line following code. This allowed us to use the reflective sensor to aid in sensing when we had turned 90 degrees and start reversing, pushing the basket straight into the wire connectors. 
-            </p>
-        </div>
-        <video autoplay loop muted playsinline class="video-background">
-            <source src="images/103.mp4" type="video/mp4" alt="Mini Bot Video" loading = "lazy">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-
-
-    <section id="aqua" class="scroll-section">
-        <div class="text">
-            <h2>Nautical Disaster - Autonomous Uncrewed Surface Vehicle</h2><br>
-            <p>
-                The Nautical Disaster is the first boat created by the aQuatonomous design team at Queens University. The team designs and builds an autonomous boat to participate in a global competition. I joined the electrical subteam where I made a name for myself helping with the layout and power distribution. I found myself drawn to the telemetry (autopilot) system which includes gps, communication, motor control and the autopilot itself. I worked on the hardware and software components of the telemetry and eventually was selected as one of three general members (and only first year member) to attend the competition. At the competition we faced a multitude of issues from the telemetry system failing to the autonomy unable to connect. Our solutions required several redesigns of the electrical box, under my direction. Eventually, with the telemetry and electrical systems functioning, we qualified for four out of five semifinals. It was a very successful competition for a first year team, placing 7th with our best run.
-            </p><br>
-            <div class = "cont-item">
-                <img src = "icons/youtube.png" alt = "Youtube Logo">
-            <a href="https://www.youtube.com/watch?v=IPi87-H9KT0" target="_blank" rel="noopener">Nautical Disaster Video</a>
+        <section id="103" class="scroll-section">
+            <div class="text">
+                <h2>Louie - Mini Bot</h2><br>
+                <p>
+                    I got the opportunity to work on the mini bot as part of my first year project course MREN103,
+                    Mechatronics Design I. We were tasked to design a line following algorithm so the bot could travel
+                    on a line around a board, pick up as many wire connectors as possible, return to the line, travel
+                    around the board and dump them in a bucket on the other side. This project involved a lot of tuning
+                    and the usage of several sensors including sharp sensors and reflective sensors. The goal of the
+                    project left room for creative solutions when faced with challenges. One of the biggest challenges
+                    we faced was turning a full circle once we were near the wall so we moved the sharp sensor to the
+                    bucket side of the robot and designed a backwards line following code. This allowed us to use the
+                    reflective sensor to aid in sensing when we had turned 90 degrees and start reversing, pushing the
+                    basket straight into the wire connectors.
+                </p>
             </div>
+            <video autoplay loop muted playsinline class="video-background">
+                <source src="images/103.mp4" type="video/mp4" alt="Mini Bot Video" loading="lazy">
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
-             
-            
-        </div>
-        <video autoplay loop muted playsinline class="video-background">
-            <source src="images/nauticaldisaster.mp4" type="video/mp4" alt="Nautical Disaster Video">
-            Your browser does not support the video tag.
-        </video>
-    </section>
 
- 
-    <section id="filter" class="scroll-section">
-        <div class="text">
-            <h2>Autimated Pre-Treatment Water System Prototype</h2><br>
-            <p>
-                The purpose of the prototype is to autonomously generate a minimum of 50 mL of clean water from approximately 250 mL of dissolved-bentonite water in under 10 minutes. All water is transported between tanks through a series of tubes. A submerged centrifugal pump pumps dirty water from a source tank into a coagulation tank. To assist in flocculation a small mixing bar is spun by magnetic interaction. A pair of small strong magnets are set into the mixing bar with the other set embedded in a gear of a gearbox. This gear box is located below the coagulation tank and reduces the RPM of a DC motor while increasing the torque. Simultaneously, approximately 0.8 g of alum is released into the tank by an alum dispenser, Figure 14. Once a turbidity sensor, located in the mixing tank, detects a sufficient voltage reading, the clear water above the sedimented layer is extracted by a peristaltic pump. It is then pumped up through a filter contained in a syringe. The filter consists of a filter sponge, silica sand, multi-purpose sand, and a small mesh strainer, which prevents the sand from floating up. Upon passing through the filter, the now-clean water exits the top of the syringe and descends into a final small tank where an additional turbidity sensor takes a reading to verify clarity. The clamshell container encloses the electronics to protect them from water damage. A breadboard placed in an accessible and visible location has push buttons to start and stop operation of the prototype. Status LEDs on the breadboard communicate the current state of the filtration process.
-            </p>
-        <div class = "cont-item">
-             <img src = "icons/githublogo.png" alt = "Github logo" loading="lazy">
-             <a href="https://github.com/KateAiken/101_Filter_Code" target="_blank" rel="noopener">Pre-Treatment Water System Code</a>
+        <section id="aqua" class="scroll-section">
+            <div class="text">
+                <h2>Nautical Disaster - Autonomous Uncrewed Surface Vehicle</h2><br>
+                <p>
+                    The Nautical Disaster is the first boat created by the aQuatonomous design team at Queens
+                    University. The team designs and builds an autonomous boat to participate in a global competition. I
+                    joined the electrical subteam where I made a name for myself helping with the layout and power
+                    distribution. I found myself drawn to the telemetry (autopilot) system which includes gps,
+                    communication, motor control and the autopilot itself. I worked on the hardware and software
+                    components of the telemetry and eventually was selected as one of three general members (and only
+                    first year member) to attend the competition. At the competition we faced a multitude of issues from
+                    the telemetry system failing to the autonomy unable to connect. Our solutions required several
+                    redesigns of the electrical box, under my direction. Eventually, with the telemetry and electrical
+                    systems functioning, we qualified for four out of five semifinals. It was a very successful
+                    competition for a first year team, placing 7th with our best run.
+                </p><br>
+                <div class="cont-item">
+                    <img src="icons/youtube.png" alt="Youtube Logo">
+                    <a href="https://www.youtube.com/watch?v=IPi87-H9KT0" target="_blank" rel="noopener">Nautical
+                        Disaster Video</a>
+                </div>
+
+
+
             </div>
-        </div>
-        <div class="image">
-            <img src="images/filter.jpeg" alt="Filter Photo">
-        </div>
-    </section>
+            <video autoplay loop muted playsinline class="video-background">
+                <source src="images/nauticaldisaster.mp4" type="video/mp4" alt="Nautical Disaster Video">
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
-    <section id="air" class="scroll-section">
-        <div class="text">
-            <h2>Fluidized Air Bed</h2><br>
-            <p>
-                As my final lab in Grade 12 Physics my partner and I were tasked with showing the “Magic of Physics” in a presentation to younger students in my school. We decided to build a fluidized airbed which is a box that pumps air into sand making the sand act like liquid. This was a difficult project as it was very precise to build and also needed very fine sand to work properly. It ended up working quite well as you can see in the video where when the weight is visible the air is turned off and the sand is acting normally. Once the air turns on the tennis ball floats up and the weight sinks showing the massive change in the sands density. 
-            </p>
-        </div>
-        <video autoplay loop muted playsinline class="video-background">
-            <source src="images/air.mp4" type="video/mp4" alt="Air Bed Video">
-            Your browser does not support the video tag.
-        </video>
-    </section>
 
-    <section id="waldo16" class="scroll-section">
-        <div class="text">
-            <h2>Waldo 16 - Underwater ROV</h2><br>
-            <p>
-                Waldo 16 was built by my school's Marine Advanced Technology Education (MATE) Remote Operated Vehicle (ROV) team for our second year attending the competition in Newfoundland. Waldo 16 was designed with four motors to control its movement on the XY-axis allowing it to move forwards/backwards, turn left/right and strafe left/right and two motors to move it up and down on the Z-axis. It was also equipped with two cameras and two claws, one vertical and one horizontal to give the driver a visual on the front and back of the robot making it more versatile. The year Waldo 16 was built I was acting as both the Head Engineer and Lead Software and Electrical Engineer. As the head engineer I worked on making sure the ROV worked and all parts functioned together for example making sure the motors were attached in the correct place so the strafing code worked correctly. As Lead Software and Electrical engineer I designed and assembled the electrical system and wrote the ROVs code while also mentoring a younger student to take on my role when I graduated.
-            </p>
-        </div>
-        <div class="image">
-            <img src="images/waldo16.png" alt="Waldo 16 Photo">
-        </div>
-    </section>
+        <section id="filter" class="scroll-section">
+            <div class="text">
+                <h2>Autimated Pre-Treatment Water System Prototype</h2><br>
+                <p>
+                    The purpose of the prototype is to autonomously generate a minimum of 50 mL of clean water from
+                    approximately 250 mL of dissolved-bentonite water in under 10 minutes. All water is transported
+                    between tanks through a series of tubes. A submerged centrifugal pump pumps dirty water from a
+                    source tank into a coagulation tank. To assist in flocculation a small mixing bar is spun by
+                    magnetic interaction. A pair of small strong magnets are set into the mixing bar with the other set
+                    embedded in a gear of a gearbox. This gear box is located below the coagulation tank and reduces the
+                    RPM of a DC motor while increasing the torque. Simultaneously, approximately 0.8 g of alum is
+                    released into the tank by an alum dispenser, Figure 14. Once a turbidity sensor, located in the
+                    mixing tank, detects a sufficient voltage reading, the clear water above the sedimented layer is
+                    extracted by a peristaltic pump. It is then pumped up through a filter contained in a syringe. The
+                    filter consists of a filter sponge, silica sand, multi-purpose sand, and a small mesh strainer,
+                    which prevents the sand from floating up. Upon passing through the filter, the now-clean water exits
+                    the top of the syringe and descends into a final small tank where an additional turbidity sensor
+                    takes a reading to verify clarity. The clamshell container encloses the electronics to protect them
+                    from water damage. A breadboard placed in an accessible and visible location has push buttons to
+                    start and stop operation of the prototype. Status LEDs on the breadboard communicate the current
+                    state of the filtration process.
+                </p>
+                <div class="cont-item">
+                    <img src="icons/githublogo.png" alt="Github logo" loading="lazy">
+                    <a href="https://github.com/KateAiken/101_Filter_Code" target="_blank" rel="noopener">Pre-Treatment
+                        Water System Code</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/filter.jpeg" alt="Filter Photo">
+            </div>
+        </section>
 
-     <section id="hangman" class="scroll-section">
-        <div class="text">
-            <h2>Hangman Python Code</h2><br>
-            <p>
-                I wrote code for hangman as a part of my Grade 11 Computer Science class. This was a python based project taking advantage of ACSII style art to provide a visual of a hangman figure. The code uses lists to contain words with multiple different themes that the user can select. Then it sets up the game with empty spots with the number of letters and an empty hangman stand. As the user guesses letters the game uses for loops to check if they are correct and output the corresponding information to the user. The game also recorded the number of guesses and indicates a fail if the user does not guess after 6 tries. The user can input either a letter or a word as a guess making the game very versatile and the game can handle upper and lower case letters. One of the interesting features of this game is its unbreakable meaning you can't enter anything that will cause the code to fail including letters, symbols etc. This feature uses the characters decimal code to make sure it is in the range of lower or upper case characters. 
-            </p>
-        </div>
-        <div class="image">
-            <img src="images/hangman.png" alt="Hangman Photo">
-        </div>
-    </section>
+        <section id="air" class="scroll-section">
+            <div class="text">
+                <h2>Fluidized Air Bed</h2><br>
+                <p>
+                    As my final lab in Grade 12 Physics my partner and I were tasked with showing the “Magic of Physics”
+                    in a presentation to younger students in my school. We decided to build a fluidized airbed which is
+                    a box that pumps air into sand making the sand act like liquid. This was a difficult project as it
+                    was very precise to build and also needed very fine sand to work properly. It ended up working quite
+                    well as you can see in the video where when the weight is visible the air is turned off and the sand
+                    is acting normally. Once the air turns on the tennis ball floats up and the weight sinks showing the
+                    massive change in the sands density.
+                </p>
+            </div>
+            <video autoplay loop muted playsinline class="video-background">
+                <source src="images/air.mp4" type="video/mp4" alt="Air Bed Video">
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
-    <section id="2048" class="scroll-section">
-        <div class="text">
-            <h2>2048 Java and Python Code</h2><br>
-            <p>
-                I wrote code for the game 2048 as my final project in my Grade 11 Computer Science class. The game 2048 is a classic number game where you have a four by four grid and a two block is generated into an empty spot in the grid after every move. The goal is to combine two of the same number together which adds the numbers and get as high a number as possible or eventually the number “2048”. This was a very difficult project to code as it was also my first time working on graphics with the PyGame library. In grade 11 I had a fully working graphic interface for the game but the game only progressed to combining to 16 because I had an inefficient structure for checking what blocks existed where. In grade 12 I attacked the project again but with more experience and in Java and was able to use 2D arrays to recreate the game. I started working on translating that code into python to work with the graphics and had the graphics partially working before the submission date. 
-            </p>
-        </div>
-        <div class="image">
-            <img src="images/2048.png" alt="2048 Photo">
-        </div>
-    </section>
+        <section id="waldo16" class="scroll-section">
+            <div class="text">
+                <h2>Waldo 16 - Underwater ROV</h2><br>
+                <p>
+                    Waldo 16 was built by my school's Marine Advanced Technology Education (MATE) Remote Operated
+                    Vehicle (ROV) team for our second year attending the competition in Newfoundland. Waldo 16 was
+                    designed with four motors to control its movement on the XY-axis allowing it to move
+                    forwards/backwards, turn left/right and strafe left/right and two motors to move it up and down on
+                    the Z-axis. It was also equipped with two cameras and two claws, one vertical and one horizontal to
+                    give the driver a visual on the front and back of the robot making it more versatile. The year Waldo
+                    16 was built I was acting as both the Head Engineer and Lead Software and Electrical Engineer. As
+                    the head engineer I worked on making sure the ROV worked and all parts functioned together for
+                    example making sure the motors were attached in the correct place so the strafing code worked
+                    correctly. As Lead Software and Electrical engineer I designed and assembled the electrical system
+                    and wrote the ROVs code while also mentoring a younger student to take on my role when I graduated.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/waldo16.png" alt="Waldo 16 Photo">
+            </div>
+        </section>
 
-    <section id="vex" class="scroll-section">
-        <div class="text">
-            <h2>VEX Robotics</h2><br>
-            <p>
-                I acted as Captain of my high school's first VEX team where I built the field, taught other students about it and took the team to our first competition in Toronto. It was a difficult season because the team was brand new and we had limited time to work on the robot due to conflicting lab times. We successfully participated in both the autonomous and manual drive parts of the competition and learned a lot in the experience. 
-            </p>
-        </div>
-        <div class="image">
-            <img src="images/vex.png" alt="VEX Photo">
-        </div>
-    </section>
+        <section id="hangman" class="scroll-section">
+            <div class="text">
+                <h2>Hangman Python Code</h2><br>
+                <p>
+                    I wrote code for hangman as a part of my Grade 11 Computer Science class. This was a python based
+                    project taking advantage of ACSII style art to provide a visual of a hangman figure. The code uses
+                    lists to contain words with multiple different themes that the user can select. Then it sets up the
+                    game with empty spots with the number of letters and an empty hangman stand. As the user guesses
+                    letters the game uses for loops to check if they are correct and output the corresponding
+                    information to the user. The game also recorded the number of guesses and indicates a fail if the
+                    user does not guess after 6 tries. The user can input either a letter or a word as a guess making
+                    the game very versatile and the game can handle upper and lower case letters. One of the interesting
+                    features of this game is its unbreakable meaning you can't enter anything that will cause the code
+                    to fail including letters, symbols etc. This feature uses the characters decimal code to make sure
+                    it is in the range of lower or upper case characters.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/hangman.png" alt="Hangman Photo">
+            </div>
+        </section>
 
-    <section id="waldo15" class="scroll-section">
-        <div class="text">
-            <h2>Waldo 15 - Underwater ROV</h2><br>
-            <p>
-               Waldo 15 was the robot built by my school's Marine Technology Advancement Education (MATE) Remote Operate Vehicle (ROV) team in 2023. We took Waldo 15 to compete in Newfoundland in our first competition after COVID-19 so we had a brand new team and robot. I worked as the Lead Software and Electrical Engineer which involved me designing and building the software and electrical setup. I started working with the motors and learning how to code the ESCs with an arduino and C++. Then I moved onto expanding the setup to 4 motors to control the forward/backward/turning and up/down movement. Once that was working we extended the setup to send the signal down 48ft of cable to give the robot maximum maneuverability underwater and integrated the claw into the controller. We had a successful competition placing 3rd in the product demonstration and 2nd in the engineering presentation and learned a ton to redesign the robot for the next year. 
-            </p>
-        </div>
-        <div class="image">
-            <img src="images/waldo15.png" alt="Waldo 15 Photo">
-        </div>
-    </section>
+        <section id="2048" class="scroll-section">
+            <div class="text">
+                <h2>2048 Java and Python Code</h2><br>
+                <p>
+                    I wrote code for the game 2048 as my final project in my Grade 11 Computer Science class. The game
+                    2048 is a classic number game where you have a four by four grid and a two block is generated into
+                    an empty spot in the grid after every move. The goal is to combine two of the same number together
+                    which adds the numbers and get as high a number as possible or eventually the number “2048”. This
+                    was a very difficult project to code as it was also my first time working on graphics with the
+                    PyGame library. In grade 11 I had a fully working graphic interface for the game but the game only
+                    progressed to combining to 16 because I had an inefficient structure for checking what blocks
+                    existed where. In grade 12 I attacked the project again but with more experience and in Java and was
+                    able to use 2D arrays to recreate the game. I started working on translating that code into python
+                    to work with the graphics and had the graphics partially working before the submission date.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/2048.png" alt="2048 Photo">
+            </div>
+        </section>
 
-    <section id="sink" class="scroll-section">
-        <div class="text">
-            <h2>Super Sink</h2><br>
-            <p>
-                In today's world, water usage is a huge concern. In remote or underdeveloped countries, access to safe/clean water can be almost impossible to find. Is it possible to create a compact and accessible system to reuse the water? In this project, we designed and built a sink to filter out particles and bacteria in the water. With research, we created a formula to simulate handwashing. Our testing criteria consisted of standard water tests to check the safety of the water. By running the handwashing solution through the filter, we learned the filter could only filter physical things out of the water, not chemicals. 
-            </p>
-        </div>
-        <div class="image">
-            <img src="images/sink.png" alt="Sink Photo">
-        </div>
-    </section>
+        <section id="vex" class="scroll-section">
+            <div class="text">
+                <h2>VEX Robotics</h2><br>
+                <p>
+                    I acted as Captain of my high school's first VEX team where I built the field, taught other students
+                    about it and took the team to our first competition in Toronto. It was a difficult season because
+                    the team was brand new and we had limited time to work on the robot due to conflicting lab times. We
+                    successfully participated in both the autonomous and manual drive parts of the competition and
+                    learned a lot in the experience.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/vex.png" alt="VEX Photo">
+            </div>
+        </section>
 
-</main>
+        <section id="waldo15" class="scroll-section">
+            <div class="text">
+                <h2>Waldo 15 - Underwater ROV</h2><br>
+                <p>
+                    Waldo 15 was the robot built by my school's Marine Technology Advancement Education (MATE) Remote
+                    Operate Vehicle (ROV) team in 2023. We took Waldo 15 to compete in Newfoundland in our first
+                    competition after COVID-19 so we had a brand new team and robot. I worked as the Lead Software and
+                    Electrical Engineer which involved me designing and building the software and electrical setup. I
+                    started working with the motors and learning how to code the ESCs with an arduino and C++. Then I
+                    moved onto expanding the setup to 4 motors to control the forward/backward/turning and up/down
+                    movement. Once that was working we extended the setup to send the signal down 48ft of cable to give
+                    the robot maximum maneuverability underwater and integrated the claw into the controller. We had a
+                    successful competition placing 3rd in the product demonstration and 2nd in the engineering
+                    presentation and learned a ton to redesign the robot for the next year.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/waldo15.png" alt="Waldo 15 Photo">
+            </div>
+        </section>
 
-<!-- Shared footer -->
-<div id="footer"></div>
+        <section id="sink" class="scroll-section">
+            <div class="text">
+                <h2>Super Sink</h2><br>
+                <p>
+                    In today's world, water usage is a huge concern. In remote or underdeveloped countries, access to
+                    safe/clean water can be almost impossible to find. Is it possible to create a compact and accessible
+                    system to reuse the water? In this project, we designed and built a sink to filter out particles and
+                    bacteria in the water. With research, we created a formula to simulate handwashing. Our testing
+                    criteria consisted of standard water tests to check the safety of the water. By running the
+                    handwashing solution through the filter, we learned the filter could only filter physical things out
+                    of the water, not chemicals.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/sink.png" alt="Sink Photo">
+            </div>
+        </section>
 
-<script src="script.js"></script>
-<script>
-    // Optional: Highlight active section in side nav
-    const sections = document.querySelectorAll('.scroll-section');
-    const navLinks = document.querySelectorAll('.side-nav a');
+    </main>
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120; // adjust for header
-            if (pageYOffset >= sectionTop) {
-                current = section.getAttribute('id');
-            }
+    <!-- Shared footer -->
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Optional: Highlight active section in side nav
+        const sections = document.querySelectorAll('.scroll-section');
+        const navLinks = document.querySelectorAll('.side-nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120; // adjust for header
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
         });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + current) {
-                link.classList.add('active');
-            }
-        });
-    });
-</script>
+    </script>
 </body>
-</html>
 
+</html>;

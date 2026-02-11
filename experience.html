@@ -5,126 +5,179 @@
     <meta charset="UTF-8">
     <title>Kate Aiken | Experience</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="proj.css">
     <link rel="stylesheet" href="exp.css">
 </head>
+
+<nav class="side-nav">
+    <ul>
+        <!-- <li><a href="#web">Website</a></li> -->
+        <li><a href="#aqua">Systems Integration Director</a></li>
+        <li><a href="#opti">Race Coach</a></li>
+        <li><a href="#mate">Head Engineer</a></li>
+        <li><a href="#swim">Swimming Instructor</a></li>
+        <li><a href="#stem">STEM Mentor</a></li>
+    </ul>
+</nav>
 
 <body>
 
     <div id="header"> </div>
 
     <main>
+
         <section class="titleblock">
             <h1>Experience</h1>
         </section>
-        <div class="tabs-container">
-            <!-- Tab Buttons -->
-            <div class="tabs-buttons">
-                <button class="tab-btn active" data-tab="tab1">Systems Integration Director</button>
-                <button class="tab-btn" data-tab="tab2">Opti Race Coach</button>
-                <button class="tab-btn" data-tab="tab3">Head Engineer</button>
-                <button class="tab-btn" data-tab="tab4">Swimming Instructor</button>
-                <button class="tab-btn" data-tab="tab5">STEM Mentor</button>
-            </div>
 
-            <!-- Tab Contents -->
-            <div class="tabs-content">
-                <div id="tab1" class="tab-panel active">
-                    <div class ="text"><br>
-                    <h2>Systems Integration Director & Electrical Engineer</h2><br>
-                    <p>When I started university I knew I would join a design team and I jumped at the opportunity to join another water related one, aQuatonomous. I first joined as a general electrical engineer and was assigned to work on the telemetry of the boat. I learned how to use Ardupilot, a software program that works with a pixhawk which is a piece of hardware that interprets commands from the brain of the boat and translates them to the motors using IMU and GPS input. With the importance of my project I was invited to attend the competition with the team. At the competition we made it to semi-finals which was a lot better than expected as it was our first year competing. With the experience of the competition, several of the executives recommended that I apply for a leadership position on the team to further advance my expertise and help mentor others and further advance the buildout of the team. I interviewed for and was awarded the position of Systems Integration Director, a new subteam created from our first year experience and my suggestions for improving the integration of the subsystems. This year has progressive quite well as my team and I have worked on learning more about the software and using data logs from competition runs to check and improve signal strength as well as prep for tuning once the boat hits the water. I am very excited for what is to come at the competition this year especially with the massive strides the team has made with all parts of the boat. </p>
-                    <br>
-                    <div class = cont-item>
-                        <img src = "icons/aqualogo.png" alt = "aQuatonomous Logo" loading = "lazy">
-                        <a href="https://aquatonomous.vercel.app/" target="_blank" rel="noopener">aQuatonomous Website</a>
-                    </div>
-                    </div>
-                    <div class="image">
-                        <img src="images/systmsint.jpg" alt="Systems Integration Photo">
-                    </div>
-                </div>
-                <div id="tab2" class="tab-panel">
-                    <div class ="text">
-                        <h2>Optimist Race Coach & Sailing Coach</h2><br>
-                        <p>As an Opti Race Coach I had the opportunity to train racers through the spring and summer season
-                        and travel across Ontario to compete in local and International regattas. My work this summer
-                        included designing and implementing a spring and summer training program which catered to all
-                        ranges of experience in sailing and racing. With the younger sailors I focused on introducing
-                        them to racing while improving and evolving their sailing skills and taking them to their first
-                        regattas to compete with sailors at the same level as them. With my older sailors I worked to
-                        elevated skills there resulting in numerous fleet wins and podium placings. I also worked on
-                        engaging sailors as a team with fun competition and games on and off the water so they could
-                        bond as a team. After camp hours I performed boat and sail maintenance including the set up of 6
-                        brand new boats, gel coating and other repairs. </p>
-                    </div>
-                    <div class="image">
-                        <img src="images/opticoach.jpeg" alt="Opti Coach Photo">
-                    </div>
-                </div>
-                <div id="tab3" class="tab-panel">
-                    <div class = "text">
-                        <h2>Head Engineer</h2><br>
-                        <p>The MATE competition is an underwater remote operated vehicle (ROV) competition where we designed
-                        and built a robot to complete a set of underwater tasks in a competition. In my first year
-                        participating on the MATE team, my skills were evident and in demand and I was given the role of
-                        Head Software and Electrical Engineer, where I was tasked with assembling the electrical systems
-                        and code, essentially on my own. In my second year I kept the same role and also added the title
-                        of the Head Engineer, where I was responsible for integrating all the subteams while
-                        simultaneously mentoring a student to assume my roles after I graduated. Our team travelled from
-                        Ontario to Newfoundland to compete. I am proud that we performed well in each competition,
-                        placing second with our engineering presentation both years and third in the robot’s performance
-                        competition in our first year. I received the Female Trailblazer award in our second year for my
-                        involvement and passion in the STEM world, as a symbol of success for women in technology. At
-                        the presentation, the judges highlighted how impressed they were with my perseverance: The day
-                        before the competition our robot flooded during testing and I spent the night taking apart our
-                        waterproofing setup and redoing it and all the wire connections.</p>
-                    </div>
-                    <div class="image">
-                        <img src="images/headeng.png" alt="Head Engineer Photo">
-                    </div>
-                </div>
-                <div id="tab4" class="tab-panel">
-                    <div class = "text">
-                    <h2>Swimming & Lifesaving Instructor</h2><br>
-                    <p>I was drawn to teaching swimming because of how much I enjoyed the Bronze Medallion and Cross courses. Once I received my certification and a Swimming, Lifesaving and First Aid instructor I worked in the evenings after school. I taught ages two to adults from the most basic intro to swimming to Bronze and first aid courses. This was an amazing experience as my first job because it gave me experience coaching/teaching, working with other people and breaking down complex concepts to make teaching easier. </p>
-                    </div>
-                    <div class="image">
-                        <img src="images/swim.png" alt="Swimming Instructor Photo">
-                    </div>
-                </div>
+        <section id="aqua" class="scroll-section">
+            <div class="text">
+                <h2>Systems Integration Director</h2><br>
+                <p>When I started university I knew I would join a design team and I jumped at the opportunity
+                    to join another water related one, aQuatonomous. I first joined as a general electrical
+                    engineer and was assigned to work on the telemetry of the boat. I learned how to use
+                    Ardupilot, a software program that works with a pixhawk which is a piece of hardware that
+                    interprets commands from the brain of the boat and translates them to the motors using IMU
+                    and GPS input. With the importance of my project I was invited to attend the competition
+                    with the team. At the competition we made it to semi-finals which was a lot better than
+                    expected as it was our first year competing. With the experience of the competition, several
+                    of the executives recommended that I apply for a leadership position on the team to further
+                    advance my expertise and help mentor others and further advance the buildout of the team. I
+                    interviewed for and was awarded the position of Systems Integration Director, a new subteam
+                    created from our first year experience and my suggestions for improving the integration of
+                    the subsystems. This year has progressive quite well as my team and I have worked on
+                    learning more about the software and using data logs from competition runs to check and
+                    improve signal strength as well as prep for tuning once the boat hits the water. I am very
+                    excited for what is to come at the competition this year especially with the massive strides
+                    the team has made with all parts of the boat.</p>
 
-                <div id="tab5" class="tab-panel">
-                    <div class = "text"><br>
-                        <h2>STEM Mentor</h2><br>
-                        <p>Volunteering has always been one of my interests as it has allowed me a way to share my knowledge
-                        and passions, particularly through STEM mentoring. I volunteered to help my former school's
-                        all-girl First Lego League (FLL), VEX and Marine Advanced Technology Education (MATE) teams.
-                        This gave me the opportunity to mentor students from grade 6 to grade 12 as each team has a
-                        different age focus and skill level. FLL is the first extracurricular opportunity for younger
-                        students interested in robotics and, as a passionate member when I was in middle school, I
-                        jumped at the opportunity to give back and help the younger students. When I started mentoring
-                        the FLL team, it was replacing the robots with a newer model so I designed an organization
-                        system, labeled all the kits, and put together lessons and a schedule to get the students versed
-                        in the new lego and code. As the VEX mentor I assembled the field and helped the team select a
-                        robot to build and compete with, while assisting the students to make changes and design
-                        adjustments. I supported the team in their first competition and I am proud of how exceedingly
-                        well they performed, considering it was the first year in the new format. I became a MATE mentor
-                        after graduating high school, where I attended meetings when I was home for university and
-                        helped members write code, came up with ideas and taught them about different hardware. I also
-                        communicated with team members remotely when they had questions or issues and stayed in
-                        communication with the teachers in order to be updated on their progress.</p>
-                    </div>
-                    <div class="image">
-                        <img src="images/mentor.png" alt="STEM Mentor Photo">
-                    </div>
-                </div>
             </div>
-        </div>
+            <div class="image">
+                <img src="images/systmsint.jpg" alt="Systems Integration Photo">
+            </div>
+        </section>
+        <section id="opti" class="scroll-section">
+            <div class="text">
+                <h2>Optimist Race & Sailing Coach</h2><br>
+                <p>
+                    As an Opti Race Coach I had the opportunity to train racers through the spring and summer
+                    season and travel across Ontario to compete in local and International regattas. My work this
+                    summer included designing and implementing a spring and summer training program which catered to
+                    all ranges of experience in sailing and racing. With the younger sailors I focused on
+                    introducing them to racing while improving and evolving their sailing skills and taking them to
+                    their first regattas to compete with sailors at the same level as them. With my older sailors I
+                    worked
+                    to elevated skills there resulting in numerous fleet wins and podium placings. I also worked on
+                    engaging sailors as a team with fun competition and games on and off the water so they could
+                    bond as a team. After camp hours I performed boat and sail maintenance including the set up
+                    of 6 brand new boats, gel coating and other repairs.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/opticoach.jpeg" alt="Opti Coach Photo">
+            </div>
+        </section>
+        <section id="mate" class="scroll-section">
+            <div class="text">
+                <h2>Head Engineer</h2><br>
+                <p>
+                    The MATE competition is an underwater remote operated vehicle (ROV) competition where we
+                    designed and built a robot to complete a set of underwater tasks in a competition. In my first year
+                    participating on the MATE team, my skills were evident and in demand and I was given the
+                    role of Head Software and Electrical Engineer, where I was tasked with assembling the electrical
+                    systems and code, essentially on my own. In my second year I kept the same role and also added the
+                    title of the Head Engineer, where I was responsible for integrating all the subteams while
+                    simultaneously mentoring a student to assume my roles after I graduated. Our team travelled
+                    from Ontario to Newfoundland to compete. I am proud that we performed well in each competition,
+                    placing second with our engineering presentation both years and third in the robot’s
+                    performance competition in our first year. I received the Female Trailblazer award in our second
+                    year for my involvement and passion in the STEM world, as a symbol of success for women in
+                    technology. At the presentation, the judges highlighted how impressed they were with my
+                    perseverance: The day before the competition our robot flooded during testing and I spent the night
+                    taking apart our waterproofing setup and redoing it and all the wire connections.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/headeng.png" alt="Head Engineer Photo">
+            </div>
+        </section>
+
+        <section id="swim" class="scroll-section">
+            <div class="text">
+                <h2>Swimming & Lifesaving Instructor</h2><br>
+                <p>
+                    I was drawn to teaching swimming because of how much I enjoyed the Bronze Medallion and Cross
+                    courses. Once I received my certification and a Swimming, Lifesaving and First Aid
+                    instructor I worked in the evenings after school. I taught ages two to adults from the most
+                    basic intro to swimming to Bronze and first aid courses. This was an amazing experience as
+                    my first job because it gave me experience coaching/teaching, working with other people and
+                    breaking down complex concepts to make teaching easier.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/swim.png" alt="Swimming Instructor Photo">
+            </div>
+        </section>
+
+        <section id="stem" class="scroll-section">
+            <div class="text">
+                <h2>STEM Mentor</h2><br>
+                <p>
+                    Volunteering has always been one of my interests as it has allowed me a way to share my
+                    knowledge and passions, particularly through STEM mentoring. I volunteered to help my former
+                    school's all-girl First Lego League (FLL), VEX and Marine Advanced Technology Education (MATE)
+                    teams. This gave me the opportunity to mentor students from grade 6 to grade 12 as each team has a
+                    different age focus and skill level. FLL is the first extracurricular opportunity for
+                    younger students interested in robotics and, as a passionate member when I was in middle school, I
+                    jumped at the opportunity to give back and help the younger students. When I started
+                    mentoring the FLL team, it was replacing the robots with a newer model so I designed an organization
+                    system, labeled all the kits, and put together lessons and a schedule to get the students
+                    versed in the new lego and code. As the VEX mentor I assembled the field and helped the team select
+                    a robot to build and compete with, while assisting the students to make changes and design
+                    adjustments. I supported the team in their first competition and I am proud of how
+                    exceedingly well they performed, considering it was the first year in the new format. I became a
+                    MATE mentor after graduating high school, where I attended meetings when I was home for university
+                    and helped members write code, came up with ideas and taught them about different hardware. I
+                    also communicated with team members remotely when they had questions or issues and stayed in
+                    communication with the teachers in order to be updated on their progress.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/mentor.png" alt="STEM Mentor Photo">
+            </div>
+        </section>
+
+
+        <!-- </div>
+        </div> -->
 
     </main>
 
     <div id="footer"></div>
 
     <script src="script.js"></script>
+     <script>
+        // Optional: Highlight active section in side nav
+        const sections = document.querySelectorAll('.scroll-section');
+        const navLinks = document.querySelectorAll('.side-nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120; // adjust for header
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

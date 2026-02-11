@@ -10,7 +10,7 @@ nav a:hover {
 
 /* Footer Container ---------------------------------- */
 .site-footer {
-    background-color: #fff;
+    background-color: #64d8f3;
     color: black;
     padding: 40px 20px;
     text-align: center;
@@ -58,7 +58,7 @@ nav a:hover {
 
 .contact-item a:hover {
     text-decoration: underline;
-    color: #666666;
+    color: #173058;
 }
 
 /* Footer copyright text */
