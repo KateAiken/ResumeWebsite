@@ -6,7 +6,7 @@ main {
 
 }
 
-/* Floating right-side nav */
+/* Nav Bar on the Side --------------------------------- */
 .side-nav {
     position: fixed;
     top: 50%;
@@ -35,9 +35,8 @@ main {
     color: #333;
     font-weight: bold;
     font-size: 16px;
-    padding: 5px 0px 5xp 0xp;     /* adds consistent space inside */
-    box-sizing: border-box; /* ensures padding doesn't overflow */
-
+    padding: 5px 0px 5xp 0xp;    
+    box-sizing: border-box; 
 }
 
 .side-nav ul li a.active,
@@ -46,7 +45,7 @@ main {
 }
 
 
-/* Sections */
+/* Sections for Content ---------------------------- */
 .scroll-section {
     display: flex;
     flex-wrap: wrap;
@@ -60,11 +59,10 @@ main {
     scroll-margin-top: 115px;
 }
 
-/* Section text and images */
 .scroll-section .text {
     flex: 1;
     min-width: 250px;
-    z-index: 2;   /* above video-background */
+    z-index: 2;  
     background: transparent;
 }
 
@@ -85,12 +83,6 @@ main {
     flex-direction: row-reverse;
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Responsive */
 @media screen and (max-width: 768px) {
     .side-nav {
         display: none;
@@ -101,11 +93,11 @@ html {
 }
 
 .video-background {
-    width: 50%;       /* full width of container */
-    height: auto;      /* maintain aspect ratio */
-    max-height: 500px; /* optional max height */
-    border-radius: 10px; /* optional rounded corners */
-    object-fit: cover; /* cover container without stretching */
+    width: 50%;      
+    height: auto;      
+    max-height: 500px; 
+    border-radius: 10px; 
+    object-fit: cover; 
     display: block;
-    margin: 20px auto; /* center horizontally */
+    margin: 20px auto; 
 }

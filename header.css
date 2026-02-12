@@ -1,11 +1,9 @@
-/* Basic reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Header container */
 .site-header {
   position: sticky;
   top: 0;
@@ -21,22 +19,18 @@
   padding: 45px 32px;
 }
 
-/* Name / title */
 .site-header h1 {
   font-size: 2.7rem;
   font-weight: 600;
   color: #111827;
 }
 
-/* Navigation layout */
 .site-header nav {
   display: flex;
   gap: 12px;
 }
 
-/* Nav links styled as buttons */
 .site-header nav a {
-  text-decoration: none;        /* removes underline */
   color: #000000;
 
   font-size: 1.2rem;
@@ -50,18 +44,16 @@
     color 0.2s ease;
 }
 
-/* Hover button effect */
 .site-header nav a:hover {
-  background-color: #97e3f4;   /* soft indigo */
+  background-color: #97e3f4;   
+  transform: translateY(-3px);
 }
 
-/* Active page button */
 .site-header nav a.active {
   background-color: #224389;
   color: #ffffff;
 }
 
-/* Mobile layout */
 @media (max-width: 600px) {
   .site-header {
     flex-direction: column;

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Mono:wght@700&display=swap');
 
-
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -24,22 +23,12 @@ h4{
 }
 
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 main {
-    padding: 50px 20px 50px 20px; /* top padding for header */
+    padding: 20px 20px 50px 20px; 
     background-color: white;
     width: 100%;
     min-height:  calc(100vh - (1rem + 20px) - (40px + 2rem));
-    box-sizing: border-box;  /* includes padding in width */
+    box-sizing: border-box;  
 }
 
 /* Sections with text + images --------------------------------------------------------------------*/
@@ -82,7 +71,7 @@ main {
 }
 
 
-/* DOWNLOAD BUTTON*/
+/* Download Button--------------------------------*/
 .download-btn {
     display: inline-block;
     padding: 12px 24px;
@@ -108,44 +97,7 @@ main {
 }
 
 
-/* Contact Items --------------------------*/
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact-item img {
-    width: 24px;
-    height: 24px;
-}
-
-.contact-item a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-.contact-item img {
-    transition: transform 0.2s ease;
-}
-
-.contact-item img:hover {
-    transform: scale(1.2);
-}
-
-.footer-copy {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-
-
-/*CONTACT SECTION PHOTOS*/
+/*Contact Icons ---------------------------------*/
 .cont-item {
     display: flex;
     align-items: center;
@@ -175,7 +127,7 @@ main {
     transform: scale(1.2);
 }
 
-
+/* Title For all pages ------------------------------ */
 .titleblock{
     padding: 30px 30px 0px 40px;
     background-color: white;
@@ -192,4 +144,8 @@ main {
     color: #555;
     max-width: 700px;
     margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
