@@ -9,7 +9,7 @@ main {
 /* Nav Bar on the Side --------------------------------- */
 .side-nav {
     position: fixed;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     right: 0px;
     width: 130px;
