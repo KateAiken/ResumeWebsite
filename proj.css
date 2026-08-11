@@ -10,7 +10,7 @@ main {
 .side-nav {
     position: fixed;
     top: 60%;
-    transform: translateY(-50%);
+    transform: translateY(-55%);
     right: 0px;
     width: 130px;
     background-color: rgba(244, 244, 244, 0.95);
